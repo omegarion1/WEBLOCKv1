@@ -411,7 +411,7 @@ function Library:create(options)
 
 	options = self:set_defaults({
 		Name = "PorHub",
-		Size = UDim2.fromOffset(500, 400),
+		Size = UDim2.fromOffset(500, 500),
 		Theme = self.Themes[settings.Theme],
 		Link = "https://es.pornhub.com"
 	}, options)
@@ -719,7 +719,10 @@ function Library:create(options)
 			selectedTab = homeButton
 			homePage.Visible = true
 			homeButton.BackgroundTransparency = 0
-			Library.UrlLabel.Text = Library.Url .. "/home"
+			Library.
+
+
+Label.Text = Library.Url .. "/home"
 		end)
 	end
 
@@ -897,7 +900,8 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "ETO", Description = "UI Library Developer,Script Developer", Discord = ETO#7014"
+	creditsTab:credit{Name = "ETO", Description = "UI Library Developer", Discord = "ETO#7014"
+
 	return mt
 end
 
