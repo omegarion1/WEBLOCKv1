@@ -1,3 +1,14 @@
+--[[
+
+edited: 1/26
+developers:
+v3rm AbstractPoo	discord Abstract#8007
+v3rm 0xDEITY		discord Deity#0228
+
+original github: https://github.com/deeeity/mercury-lib
+
+
+]]
 
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -33,10 +44,18 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Rust = {
+		Porhub = {
 			Main = Color3.fromRGB(1, 1, 1),
 			Secondary = Color3.fromRGB(255, 108, 9),
 			Tertiary = Color3.fromRGB(255, 108, 9),
+
+			StrongText = Color3.fromHSV(0, 0, 1),		
+			WeakText = Color3.fromHSV(0, 0, 172/255)
+		},
+		Rust = {
+			Main = Color3.fromRGB(37, 35, 33),
+			Secondary = Color3.fromRGB(65, 63, 63),
+			Tertiary = Color3.fromRGB(237, 94, 38),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
@@ -68,9 +87,9 @@ local Library = {
 	},
 	WelcomeText = nil,
 	DisplayName = nil,
-	DragSpeed = 0.7,
+	DragSpeed = 0.06,
 	LockDragging = false,
-	ToggleKey = Enum.KeyCode.End,
+	ToggleKey = Enum.KeyCode.Home,
 	UrlLabel = nil,
 	Url = nil
 
@@ -411,9 +430,9 @@ function Library:create(options)
 
 	options = self:set_defaults({
 		Name = "PorHub",
-		Size = UDim2.fromOffset(500, 500),
+		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://es.pornhub.com"
+		Link = "https://Porhub.com/"
 	}, options)
 	
 	if getgenv and getgenv().MercuryUI then
@@ -719,10 +738,7 @@ function Library:create(options)
 			selectedTab = homeButton
 			homePage.Visible = true
 			homeButton.BackgroundTransparency = 0
-			Library.
-
-
-Label.Text = Library.Url .. "/home"
+			Library.UrlLabel.Text = Library.Url .. "/home"
 		end)
 	end
 
@@ -900,7 +916,8 @@ Label.Text = Library.Url .. "/home"
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "ETO", Description = "UI Library Developer", Discord = "ETO#7014"
+	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
+	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
 
 	return mt
 end
@@ -3413,5 +3430,3 @@ return setmetatable(Library, {
 		return rawget(Library, i:lower())
 	end
 })
-
-
