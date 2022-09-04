@@ -419,9 +419,7 @@ function Aiming.GetClosestPlayerToCursor()
                     ClosestPlayer = Player
                     ShortestDistance = Magnitude
                     TargetPart = TargetPartTemp
-                end
-                PartVelocity = Utilities.CalculateVelocity(PreviousPosition, TargetPart.Position, deltaTime)
-                    PreviousPosition = TargetPart.Position
+            
                     end
             end
         end
