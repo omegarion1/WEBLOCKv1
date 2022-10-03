@@ -543,8 +543,8 @@ function library:CreateWindow(WName)
 	end
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-        	Title = "YoungStars Lib V1",
-        	Text = "Made by YoungStar#0001",
+        	Title = "Eto Fantastic",
+        	Text = "Made by Eto Player",
         	Duration = 5
    	 	})
 	end)
